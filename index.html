@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Winter Consistency Plan &middot; Easy Breezy Pros &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Winter Consistency Plan &middot; Easy Breezy Pros LLC &middot; Cedar City, Utah</div>
+    <div class="sub">Prepared for Ben Hansen &middot; 23 September 2026 &middot; AG1 Consulting</div>
+    <h1>January Is The Peak Month For Dryer Fires. It Is Also Your Quietest Month. Those Two Facts Should Not Coexist.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-F">
+        <div class="bigletter bl-F" style="font-size:44px">JAN</div>
+        <div class="score100">peak month for clothes dryer fires &mdash; FEMA</div>
+      </div>
+      <div class="heroread">
+        <h2>You already sell the service that peaks in the season you are trying to fill.</h2>
+        <p>The US Fire Administration found clothes dryer fires are <b>&ldquo;higher in the fall and winter months,
+        peaking in January at 11 percent&rdquo;</b> &mdash; and that <b>&ldquo;failure to clean (34 percent) was the
+        leading factor contributing to the ignition.&rdquo;</b></p>
+        <p><b>Dryer vent cleaning is one of your three services.</b> It has its own page. You are simply not selling it
+        in the month it sells itself.</p>
+        <div class="tag">Site read 22 September 2026 &middot; FEMA figures sourced and quoted in the footer</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">First &mdash; We Are Not Touching Your Website</div>
+    <div class="win">
+      <div class="lab">You told Paige you are happy with it, and you are right to be</div>
+      <p>It is a real WordPress site with sixteen published pages, a separate page for each of your three services, a
+      service-areas section, a certifications page, a reviews page and fifty-nine blog posts. <b>Most operators in your
+      trade have four pages and no blog at all.</b></p>
+      <p>You also already have <b>Google Analytics 4</b> and a <b>Google Ads conversion tag</b> installed. That is more
+      measurement than most of your competitors have.</p>
+      <p><b>Nothing in this document proposes a redesign, a rebuild, or a new look.</b> There is exactly one technical
+      item below, it is a tracking tag rather than a design change, and it does not alter a single thing you like about
+      how the site looks or works.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; You Ran Meta Ads Last Winter With No Meta Pixel</div>
+    <div class="code">
+What is installed on your site today:
+
+  Google Analytics 4        <span class="ok">G-LNMF7NBGBL</span>      present
+  Google Ads tag            <span class="ok">AW-730405747</span>      present
+
+  Meta pixel                <span class="ph">not found</span>
+  Google Tag Manager        <span class="ph">not found</span>  (so nothing is hidden inside a container)
+
+  Only Facebook references on the site:
+    facebook.com/EasyBreezyPros/   <span class="ph">a link to your page, not a pixel</span>
+    </div>
+    <div class="flag">
+      <div class="lab">This is why last winter reads as &ldquo;it helped a little bit&rdquo;</div>
+      <p>Without a pixel, three things are true at once, and all three matter for what you are asking:</p>
+      <ul>
+        <li><b>You cannot tell what it did.</b> Meta can report clicks, but it cannot connect a click to a booked job on
+        your site. &ldquo;A little bit&rdquo; is the most precise answer anyone could have given you.</li>
+        <li><b>You cannot retarget.</b> Everybody who visited your site last winter and did not call is the cheapest
+        audience you will ever have access to, and it was never collected. That audience does not exist now and cannot
+        be recovered retroactively.</li>
+        <li><b>You cannot repeat it.</b> If last winter worked, nobody can say which part worked, so this winter starts
+        from zero again.</li>
+      </ul>
+      <p><b>This is the one technical item.</b> It is a tag, not a redesign. It changes nothing a visitor sees.</p>
+      <p class="tag">We checked the served HTML for <b>fbq(</b>, <b>connect.facebook.net</b> and any tag-manager
+      container. A static read cannot prove absence with total certainty &mdash; but with no container present there is
+      nowhere for it to be hiding, and whoever runs your ads can confirm it in about a minute.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; Winter Is Not Your Off-Season. It Is Your Unworked Season.</div>
+    <div class="warn">
+      <div class="lab">Your three services do not share a calendar</div>
+      <ul>
+        <li><b>Carpet cleaning is a spring and summer service.</b> People clean carpets before guests arrive, after
+        winter, when they can open windows. Your own blog knows this &mdash; you published
+        <b>&ldquo;Carpet Cleaning Before Summer Guests Arrive&rdquo;</b> in June.</li>
+        <li><b>Air duct cleaning is a winter service.</b> The furnace runs, windows stay shut, and the air in the house
+        gets recirculated for four months. Indoor air quality stops being abstract in December.</li>
+        <li><b>Dryer vent cleaning peaks in January.</b> Not by opinion &mdash; by federal fire data. More clothes,
+        heavier fabrics, nothing dried outdoors.</li>
+      </ul>
+      <p><b>If winter feels slow, it is because the winter services are being marketed with the summer ones</b>, in a
+      single undifferentiated &ldquo;air duct and carpet cleaning&rdquo; message, all year round.</p>
+      <p>You are not fighting seasonality. <b>You are running a summer offer in January.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; Your Blog Goes Silent Every Winter, And You Already Wrote The Winter Posts</div>
+    <div class="code">
+Fifty-nine posts published. When they were last touched:
+
+  2024-04    <span class="ok">1</span>
+  2024-10    <span class="ok">5</span>
+  2025-09    <span class="ok">16</span>  \
+  2025-10    <span class="ok">32</span>   |  48 posts in two months = a bulk migration,
+                             /     not a publishing habit
+  2025-11    <span class="ok">1</span>
+  2026-04    <span class="ok">1</span>
+  2026-06    <span class="ok">1</span>
+  2026-08    <span class="ok">1</span>
+
+In the last eleven months you published <span class="ph">four posts</span>.
+Between December and March: <span class="ph">none</span>.
+    </div>
+    <div class="flag">
+      <div class="lab">And here is the part that makes this cheap to fix</div>
+      <p><b>The winter content is already written and already on your site.</b> It is simply never promoted in winter:</p>
+      <ul>
+        <li><b>Prep Your Ducts For Winter</b></li>
+        <li><b>Dryer Fire Hazards</b> &mdash; and <b>The Hidden Cost Of A Dryer</b></li>
+        <li><b>Indoor Air Quality Matters</b></li>
+        <li><b>Improve Your Mental Health This Winter</b></li>
+        <li><b>Get The Most Out Of Your HVAC System</b></li>
+        <li><b>3 Horror Stories Show Why You Need Air Duct Cleaning</b></li>
+      </ul>
+      <p>You do not need a content programme to fill this winter. <b>You need the six posts you already own put in front
+      of people in the eight weeks they are relevant</b>, with a Meta pixel underneath them so you can retarget everyone
+      who reads one.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; The Real Answer To &ldquo;Consistent&rdquo; Is Not Ads. It Is Contracts.</div>
+    <div class="win">
+      <div class="lab">Your own website already claims this, and then does nothing with it</div>
+      <p>Your service-areas page says you are <b>&ldquo;trusted by property managers and home builders.&rdquo;</b> Your
+      services page offers <b>&ldquo;Services for Both Residential &amp; Commercial Properties&rdquo;</b> with Commercial
+      options in the menu for both duct and carpet cleaning.</p>
+      <p><b>And you have four commercial posts already written:</b> Commercial Air Duct Cleaning Cedar City &middot;
+      Commercial Warehouse Duct Cleaning &middot; Duct Cleaning For Municipal And Commercial Buildings &middot; Sick
+      Employees Cost Businesses A Lot. Plus two for realtors.</p>
+    </div>
+    <div class="code">
+Pages published on your site:            <span class="ok">16</span>
+Pages for commercial or property managers: <span class="ph">0</span>
+
+  /air-duct-cleaning-in-cedar-city-utah/     <span class="ok">residential</span>
+  /carpet-cleaning-in-cedar-city-utah/       <span class="ok">residential</span>
+  /dryer-vent-cleaning-in-cedar-city-utah/   <span class="ok">residential</span>
+    </div>
+    <div class="flag">
+      <div class="lab">This is the difference between a busy winter and a quiet one</div>
+      <p><b>A homeowner books when they feel like it. A property manager books on a schedule.</b> Apartment blocks,
+      rentals, HOAs, motels, offices and municipal buildings turn over units and service buildings on calendars that do
+      not care what the weather is doing &mdash; and in Cedar City a great deal of that is student and seasonal rental
+      stock that turns over in winter.</p>
+      <p>Consumer ads make a good month. <b>Commercial and property-manager accounts make a consistent year</b>, because
+      the same building calls you again next year without an ad being served.</p>
+      <p><b>You are already selling it, already trusted for it, and have written six pieces about it. There is nowhere
+      on your website to send anybody who wants it.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 5 &mdash; St George Is The Bigger Market And Has One Page</div>
+    <div class="code">
+  Towns named on your service-areas page:
+    <span class="ok">Cedar City</span> &middot; <span class="ok">St George</span> &middot; <span class="ok">Hurricane</span> &middot; <span class="ok">Washington</span>
+
+  Service-area pages actually built:
+    <span class="ok">/air-duct-cleaning-service-areas/st-george-utah-air-duct-cleaning/</span>
+
+  Hurricane:   <span class="ph">no page</span>
+  Washington:  <span class="ph">no page</span>
+    </div>
+    <div class="warn">
+      <div class="lab">One page is the right instinct, stopped too early</div>
+      <p>Somebody already understood this &mdash; the St George page exists and is structured correctly. <b>It just never
+      got repeated for the other towns you say you serve</b>, and it only covers air duct cleaning, not dryer vents or
+      carpet.</p>
+      <p>This is the cheapest work in the document and none of it touches your existing pages.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Winter Calendar We Would Run</div>
+    <div class="code">
+  OCT    Dryer vent safety campaign begins &mdash; ahead of the season, not during it
+         Meta pixel installed and verified (the one technical item)
+         Commercial / property-manager page built
+
+  NOV    Furnace season duct cleaning &mdash; indoor air quality angle
+         Retarget everyone who read a dryer-vent post and did not book
+         Direct outreach to property managers before their winter turnover
+
+  DEC    Holiday angle: house full of guests, heating on, windows shut
+         Gift-certificate offer &mdash; you already have a giveaway page built
+
+  JAN    <span class="ok">Dryer fire safety &mdash; the peak month, federal data behind it</span>
+         Hardest push of the year, when everyone else in your trade is quiet
+
+  FEB    Post-holiday deep clean &middot; rental and student turnover
+         Commercial renewals for anyone signed in October
+
+  MAR    Spring allergy pre-season &mdash; duct cleaning before pollen
+         Carpet cleaning restarts as the summer service
+    </div>
+    <div class="tag">Every angle above maps to a service you already sell and, in six cases, to a blog post you have
+    already written and published.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Would Do, In Order</div>
+    <ul class="road">
+      <li><b>Install and verify the Meta pixel.</b> One tag. No design change. Without it nothing else this winter can
+      be measured or retargeted, and you will be having this same conversation next September.</li>
+      <li><b>Build the commercial and property-manager page.</b> A new page, not a change to an existing one. This is
+      the consistency lever and everything else is a good month.</li>
+      <li><b>Split the seasons in the advertising.</b> Dryer vent and duct cleaning from October. Carpet from March.
+      Stop running one blended message across a calendar it does not fit.</li>
+      <li><b>Promote the six winter posts you already own</b>, in the eight weeks each is relevant, with retargeting
+      behind them.</li>
+      <li><b>Repeat the St George page</b> for Hurricane and Washington, and for dryer vents and carpet, not only ducts.</li>
+      <li><b>Then judge it</b> &mdash; on booked jobs per month December to March against last winter, which is a
+      comparison you cannot currently make.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>You asked how to stay consistent through winter. You already sell the service that peaks in January.</h2>
+    <p>It needs a pixel underneath it, a page for the commercial buyers, and a calendar that matches your own trade.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 23 September 2026<br><br>
+    For Ben Hansen, Easy Breezy Pros LLC, Cedar City, Utah. <b>Every statement about the website &mdash; the sixteen
+    published pages and the absence of any commercial or property-manager page, the fifty-nine blog posts and their
+    last-modified dates, the named service areas, the single St George service-area page, the Google Analytics 4 property
+    G-LNMF7NBGBL, the Google Ads tag AW-730405747, the Organization and WebSite structured data, and the absence of any
+    Meta pixel or tag-manager container &mdash; was read directly from easybreezypros.com's own served pages and
+    published sitemaps on 22 September 2026 and is reproducible.</b> <b>Items recorded as &ldquo;not found&rdquo;
+    describe what a static read of the served HTML returned on that date and are not proof of absence; we state only
+    that no pixel and no tag-manager container were present in the HTML served to us, and this should be confirmed with
+    whoever manages your advertising before being relied on.</b> <b>Last-modified dates in a sitemap record when a page
+    was last changed, not necessarily when it was first published; the clustering we describe as a migration is our
+    inference from that pattern and may have another explanation.</b> <b>We were unable to retrieve your Meta Ad Library
+    entry &mdash; the library refused our requests &mdash; so nothing in this document describes, counts or assesses any
+    advertisement you have run, and no claim is made about your current or past Meta or Local Services Ads activity,
+    spend, targeting or results.</b> <b>The FEMA figures are quoted verbatim from the U.S. Fire Administration's
+    <i>Clothes Dryer Fires in Residential Buildings</i> (Topical Fire Report Series, Volume 13, Issue 7), which analyses
+    2008&ndash;2010 National Fire Incident Reporting System data: &ldquo;An estimated 2,900 clothes dryer fires in
+    residential buildings are reported to U.S. fire departments each year&rdquo;; &ldquo;Clothes dryer fire incidence in
+    residential buildings was higher in the fall and winter months, peaking in January at 11 percent&rdquo;; and
+    &ldquo;Failure to clean (34 percent) was the leading factor contributing to the ignition of clothes dryer fires in
+    residential buildings.&rdquo; These are national figures from that period, are not specific to Utah, Cedar City or
+    any individual property, and are cited as evidence of a seasonal pattern only &mdash; nothing here is a fire-safety
+    assessment, a fire-risk opinion, or a claim that cleaning any vent will prevent any fire.</b> <b>Statements about
+    when carpet, duct and dryer vent work are in demand, and about property-manager and rental turnover in Cedar City,
+    are our commercial judgement and general market reasoning, not measured data about your business or your market.</b>
+    <b>Your revenue, job volume, pricing, staffing, margins, advertising spend and seasonal booking pattern are unknown
+    to us and nothing here estimates or asserts any of them.</b> <b>No Google Business Profile, review count, map
+    position, search volume, ranking or competitor has been measured or assessed.</b> <b>⚠ No number of enquiries,
+    calls, leads, booked jobs, contracts, rankings or revenue outcomes is promised, forecast or guaranteed anywhere in
+    this document, and nothing here should be read as such.</b> Nothing here is a comment on the competence, licensing,
+    insurance or workmanship of this or any other business, and nothing here is legal, fire-safety, financial or
+    business advice. Company, agency and scheme names are used for identification only and belong to their respective
+    owners. The commentary and any judgements are AG1's own editorial opinion.
+  </div>
+</footer>
+</body></html>
