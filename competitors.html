@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Competitor Analysis &middot; Easy Breezy Pros &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+.agnav{position:sticky;top:0;z-index:60;background:rgba(13,17,23,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.agnav .inner::-webkit-scrollbar{display:none}
+.agnav a{flex:0 0 auto;padding:13px 12px;font-size:13.5px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.agnav a:hover{color:var(--ink)}
+.agnav a.on{color:var(--accent);border-bottom-color:var(--accent)}
+.agnav a.ext{opacity:.8}
+@media(max-width:640px){.agnav .inner{padding:0 14px}.agnav a{padding:12px 10px;font-size:13px}}
+</style></head><body><nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Winter Plan</a><a href="competitors.html" class="on">Competitors</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Competitor Analysis &middot; Air Duct &amp; Carpet Cleaning &middot; Cedar City / Iron County, Utah</div>
+    <div class="sub">Prepared for Ben Hansen &middot; Easy Breezy Pros LLC &middot; 23 September 2026 &middot; AG1 Consulting</div>
+    <h1>You Have The Best Site In This Market. A Franchise With No Analytics Has Already Built Your Fall And Holiday Pages.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-F">
+        <div class="bigletter bl-F" style="font-size:40px">4</div>
+        <div class="score100">seasonal landing pages Heaven's Best publishes. You publish none.</div>
+      </div>
+      <div class="heroread">
+        <h2>This is not a field that is beating you on quality. It is beating you on calendar and geography.</h2>
+        <p><b>You publish 59 blog posts and 16 pages. You have GA4 and a Google Ads tag.</b> Nobody else here comes
+        close on either.</p>
+        <p><b>But Heaven's Best publishes 12 town pages and a landing page each for fall, holiday, spring and
+        summer</b> &mdash; the two things you do not have, and the exact two things your winter question is about.</p>
+        <div class="tag">Read from each firm's own served pages and published sitemaps, 23 September 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Comparison</div>
+    <div style="overflow-x:auto">
+    <table class="cmp">
+      <tr>
+        <th></th>
+        <th>Heaven's Best (franchise)</th>
+        <th>Duct Pros</th>
+        <th class="you">Easy Breezy Pros</th>
+      </tr>
+      <tr><td><b>Pages published</b></td><td class="yes">31</td><td class="no">5 real pages</td><td class="you"><b>16</b></td></tr>
+      <tr><td><b>Blog posts</b></td><td class="no">None published</td><td class="no">1 &mdash; &ldquo;Hello world&rdquo;</td><td class="you"><b>59</b></td></tr>
+      <tr><td><b>Town / location pages</b></td><td class="yes">12</td><td class="no">0</td><td class="no"><b>0</b></td></tr>
+      <tr><td><b>Seasonal landing pages</b></td><td class="yes">4 &mdash; fall, holiday, spring, summer</td><td class="no">0</td><td class="no"><b>0</b></td></tr>
+      <tr><td><b>Analytics</b></td><td class="no">Not found</td><td class="no">Not found</td><td class="you"><b>GA4</b></td></tr>
+      <tr><td><b>Google Ads tag</b></td><td class="no">Not found</td><td class="no">Not found</td><td class="you"><b>Present</b></td></tr>
+      <tr><td><b>Meta pixel</b></td><td class="no">Not found</td><td class="no">Not found</td><td class="no"><b>Not found</b></td></tr>
+      <tr><td><b>Service pages</b></td><td class="no">1 &mdash; carpet only</td><td class="yes">2 &mdash; duct + dryer</td><td class="you"><b>3 &mdash; duct, dryer, carpet</b></td></tr>
+      <tr><td><b>Reviews page</b></td><td class="yes">Yes</td><td class="no">No</td><td class="you"><b>Yes &mdash; two</b></td></tr>
+      <tr><td><b>Before / after photos</b></td><td class="yes">Yes</td><td class="no">No</td><td class="no"><b>No</b></td></tr>
+      <tr><td><b>Online payment</b></td><td class="yes">Yes</td><td class="no">No</td><td class="no"><b>No</b></td></tr>
+      <tr><td><b>Housekeeping</b></td><td class="no">6 test pages live</td><td class="no">WordPress placeholders live</td><td class="you"><b>Clean</b></td></tr>
+    </table>
+    </div>
+    <div class="tag" style="margin-top:12px">Counts are from each firm's own published sitemaps on 23 September 2026. "Not found" records what a static read of the served homepage returned and is not proof of absence; a tag may load on other pages or after render. This is the set we could find and verify in the duct and carpet trade locally &mdash; it is not a census of every cleaner in Iron County.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Row That Answers Your Question</div>
+    <div class="flag">
+      <div class="lab">Somebody in your market already decided the calendar was the problem</div>
+      <div class="code">
+Heaven's Best Cedar City publishes:
+
+  <span class="ok">/fall-landing-page/</span>
+  <span class="ok">/holiday-landing-page/</span>
+  <span class="ok">/landing-page-spring/</span>
+  <span class="ok">/landing-summer/</span>
+
+Easy Breezy Pros publishes:
+
+  <span class="ph">nothing seasonal at all</span>
+      </div>
+      <p>You told Paige your goal is <b>consistency through winter.</b> A national franchise operating in your town has
+      already built a page for fall and a page for the holidays.</p>
+      <p><b>And they are doing it without any analytics we can find, for carpet cleaning only</b> &mdash; which is the
+      summer service. <b>They have no air duct page and no dryer vent page at all.</b></p>
+      <p>So the winter ground &mdash; ducts, dryer vents, indoor air quality, fire safety &mdash; <b>is completely
+      uncontested in this market.</b> Nobody has written a word about it. You have the only three service pages that
+      cover it, and the only 59 blog posts, and you go quiet in December.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Other Row: Twelve Towns You Do Not Have</div>
+    <div class="code">
+Heaven's Best location pages:
+
+  <span class="ok">Cedar City</span> &middot; <span class="ok">Enoch</span> &middot; <span class="ok">Parowan</span> &middot; <span class="ok">Brian Head</span> &middot; <span class="ok">Beaver</span>
+  <span class="ok">Minersville</span> &middot; <span class="ok">Milford</span> &middot; <span class="ok">Panguitch</span> &middot; <span class="ok">Paragonah</span>
+  <span class="ok">Kanarraville</span> &middot; <span class="ok">New Harmony</span> &middot; <span class="ok">Duck Creek</span>
+
+Your service-area pages:
+
+  <span class="ok">St George</span>  &mdash; one page, air duct only
+  <span class="ph">Everything else: none</span>
+    </div>
+    <div class="win">
+      <div class="lab">And they did it badly, which is the opportunity</div>
+      <p><b>Two of their twelve URLs are misspelled</b> &mdash; <code>carpet-cleaqning-paragonah</code> and
+      <code>panquitch</code> for Panguitch. <b>All twelve are carpet only.</b> Not one of them mentions air ducts or
+      dryer vents, because they do not publish those services.</p>
+      <p>Your site already names <b>St George, Hurricane and Washington</b> as areas you serve. The St George page
+      exists and is built correctly &mdash; <b>it just never got repeated</b>, and it only covers one of your three
+      services.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Where You Are Already Winning</div>
+    <div class="win">
+      <div class="lab">This is worth saying plainly, because it changes what the work should be</div>
+      <ul>
+        <li><b>59 blog posts against nobody.</b> Heaven's Best publishes no blog. Duct Pros has one post and it is
+        still the default WordPress &ldquo;Hello world&rdquo;.</li>
+        <li><b>You are the only firm here with any analytics or advertising tag we could find.</b> You can see what
+        works and they cannot.</li>
+        <li><b>You are the only one with all three services published</b> &mdash; air duct, dryer vent and carpet.
+        Heaven's Best has carpet only; Duct Pros has no carpet.</li>
+        <li><b>Duct Pros still has <code>sample-page</code> and <code>hello-world</code> live in their sitemap</b>, and
+        no enquiry form anywhere we could find. Heaven's Best has six test pages published.</li>
+        <li><b>You have two review pages and a certifications page.</b> That is real trust infrastructure.</li>
+      </ul>
+      <p style="margin-top:10px"><b>You are not losing this market on quality. You are the strongest site in it.</b>
+      Which is exactly why the answer to a quiet winter is not &ldquo;work harder on the website&rdquo; &mdash; it is
+      the calendar, the towns, and the commercial buyers none of you are chasing.</p>
+    </div>
+    <div class="warn">
+      <div class="lab">And where you are genuinely exposed</div>
+      <p><b>Stanley Steemer and SERVPRO both serve Cedar City.</b> We could not read their local pages properly &mdash;
+      both are large JavaScript-driven national sites &mdash; so we make no claim about what they publish here. But they
+      carry national brand recognition and national ad budgets, and SERVPRO in particular owns the restoration and
+      insurance channel, which is the most valuable commercial work in your trade.</p>
+      <p><b>Neither of your two local rivals has a Meta pixel. Neither do you.</b> That is the one row where nobody in
+      this market is doing the work, and it is the cheapest advantage available.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Could Not Check</div>
+    <div class="warn">
+      <div class="lab">Marked honestly rather than guessed</div>
+      <ul>
+        <li><b>The Meta Ad Library refused every request we made today</b> &mdash; direct requests returned 403 and a
+        proxy returned a CAPTCHA notice. <b>So we cannot see what you or anybody else is running on Meta, and nothing in
+        this document describes, counts or assesses any advertisement by any firm, including yours.</b> That is a closed
+        door on our side, not a finding about anyone.</li>
+        <li><b>Stanley Steemer's and SERVPRO's Cedar City pages</b>, for the reason above.</li>
+        <li><b>Everyone's Google Business Profile, review count and map position</b>, including yours. In local cleaning
+        work that is where a large share of enquiry begins.</li>
+        <li><b>Anyone's revenue, crew size, pricing, job volume or seasonal split</b>, including yours.</li>
+        <li><b>Every cleaner in Iron County.</b> Several carpet cleaners appear in directories with no website we could
+        verify, and firms without a site are not assessable this way.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>A carpet-only franchise built a fall page and a holiday page. The winter trade is ducts, and nobody has written a word about it.</h2>
+    <p>You already have the pages, the posts and the meter. You are just not pointing them at December.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 23 September 2026<br><br>
+    For Ben Hansen, Easy Breezy Pros LLC, Cedar City, Utah. <b>Page counts, location and seasonal landing page counts
+    and their URL slugs, blog post counts, service pages, analytics and advertising tags, forms, telephone links and the
+    presence of test or default placeholder pages were read from each named company's own served pages and published
+    sitemaps on 23 September 2026 and are reproducible.</b> Cells marked "not found" record what a static read of the
+    served HTML returned on that date and must not be read as proof of absence; tags may load on pages other than the
+    homepage or after render, and content rendered by JavaScript may not appear in a static read. <b>Heaven's Best
+    Cedar City is an independently operated franchise location of a national brand and the site read is its own
+    subdomain; nothing here is a statement about the national franchisor or any other franchisee.</b> <b>We were unable
+    to read Stanley Steemer's or SERVPRO's local pages and make no claim whatsoever about what either publishes,
+    advertises or offers in this market; the remarks about national brand recognition and the restoration channel are
+    general commercial observations, not measurements.</b> <b>The Meta Ad Library refused every request made on 23
+    September 2026, returning HTTP 403 directly and a CAPTCHA notice through a proxy. No advertisement by any firm named
+    here, including Easy Breezy Pros LLC, has been seen, counted or assessed, and no claim is made about any firm's
+    current or past advertising activity, spend, targeting or results.</b> <b>No company's revenue, staffing, pricing,
+    job volume, seasonal booking pattern, licensing, insurance or workmanship has been assessed, and nothing whatsoever
+    is claimed or implied about any of them.</b> <b>No Google Business Profile, map position, review count or search
+    ranking has been measured for any firm, including Easy Breezy Pros.</b> <b>⚠ No ranking, enquiry volume, booked job,
+    market share, conversion or revenue outcome is forecast or promised anywhere in this document.</b> Nothing here is a
+    comment on the competence, conduct or standing of any named business; company, franchise and brand names are used
+    for identification only and belong to their respective owners. The commentary and any judgements are AG1's own
+    editorial opinion.
+  </div>
+</footer>
+</body></html>
