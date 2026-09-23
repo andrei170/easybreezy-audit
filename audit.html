@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website &amp; Technical Audit &middot; Easy Breezy Pros &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+.agnav{position:sticky;top:0;z-index:60;background:rgba(13,17,23,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.agnav .inner::-webkit-scrollbar{display:none}
+.agnav a{flex:0 0 auto;padding:13px 12px;font-size:13.5px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.agnav a:hover{color:var(--ink)}
+.agnav a.on{color:var(--accent);border-bottom-color:var(--accent)}
+.agnav a.ext{opacity:.8}
+@media(max-width:640px){.agnav .inner{padding:0 14px}.agnav a{padding:12px 10px;font-size:13px}}
+</style></head><body><nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Winter Plan</a><a href="audit.html" class="on">Website Audit</a><a href="competitors.html">Competitors</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Website &amp; Technical Audit &middot; Easy Breezy Pros LLC &middot; Cedar City, Utah</div>
+    <div class="sub">Prepared for Ben Hansen &middot; 24 September 2026 &middot; AG1 Consulting</div>
+    <h1>Three Services, Two Phone Numbers, And A Services Page Of 330 Words.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-D">
+        <div class="bigletter bl-D" style="font-size:44px">330</div>
+        <div class="score100">words on the page that sells all three of your services</div>
+      </div>
+      <div class="heroread">
+        <h2>You said you are happy with the website. This is not an argument with that &mdash; it is the read you asked for.</h2>
+        <p>Nothing here proposes a redesign. <b>It is a list of what is on the site, measured, so you can decide what
+        is worth touching and what is not.</b></p>
+        <p><b>Most of it is fine. Four things are worth twenty minutes each.</b></p>
+        <div class="tag">Every page read 24 September 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">What Is Already Right</div>
+    <div class="win">
+      <div class="lab">Genuinely more than most firms in your trade have</div>
+      <ul>
+        <li><b>Google Analytics 4 installed and running</b> &mdash; property <b>G-LNMF7NBGBL</b>.</li>
+        <li><b>A Google Ads conversion tag</b> &mdash; <b>AW-730405747</b>. So the Google side is measured.</li>
+        <li><b>Written meta descriptions</b> on the home, services and contact pages. Most small sites have none.</li>
+        <li><b>Tappable phone numbers on every page</b> &mdash; four on the homepage and the contact page, two elsewhere.</li>
+        <li><b>A page for each of your three services</b>, plus a certifications page and two review pages.</li>
+        <li><b>Fifty-nine published articles.</b> Nobody else in your market publishes anything at all.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; Every Page Measured</div>
+    <div class="code">
+  /                                       <span class="ok">1,204</span> words
+  /dryer-vent-cleaning-in-cedar-city-utah  <span class="ok">831</span>
+  /air-duct-cleaning-service-areas/st-george  <span class="ok">742</span>
+  /air-duct-cleaning-in-cedar-city-utah    <span class="ok">637</span>
+  /carpet-cleaning-in-cedar-city-utah      <span class="ok">632</span>
+  <span class="ph">/services                                330</span>
+  <span class="ph">/contact                                 245</span>
+
+  Total pages published                    <span class="ok">16</span>
+  Blog articles                            <span class="ok">59</span>
+    </div>
+    <div class="warn">
+      <div class="lab">The services page is the thin one, and it is the one that matters</div>
+      <p><b>Your services page is 330 words and it has to carry all three services.</b> It is the page a visitor lands
+      on when they are deciding what they need, and it is the second shortest page on the site.</p>
+      <p>Your individual service pages are fine &mdash; 600 to 800 words each. <b>It is the hub above them that is
+      thin</b>, which is a short job, not a rebuild.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; No LocalBusiness Markup</div>
+    <div class="code">
+  Structured data found:
+
+    <span class="ok">Organization</span>
+    <span class="ok">WebSite</span>
+
+  Structured data missing:
+
+    <span class="ph">LocalBusiness</span>     the one that matters for a local service firm
+    <span class="ph">Service</span>           what you do
+    <span class="ph">FAQPage</span>           answers Google can quote directly
+    <span class="ph">AggregateRating</span>   the markup that puts stars in search results
+    </div>
+    <div class="flag">
+      <div class="lab">This is the cheapest technical item on the list</div>
+      <p><b>Organization markup tells Google you are a company. LocalBusiness markup tells it you are a company at a
+      place, serving an area, with opening hours.</b> For a firm whose customers search &ldquo;near me&rdquo;, that is
+      the difference that matters.</p>
+      <p><b>And AggregateRating is what puts a star rating beside your listing</b> in search results. You are
+      &ldquo;top-rated by customers&rdquo; by your own description and none of that is marked up anywhere.</p>
+      <p>This is a one-off job measured in hours, it changes nothing a visitor sees, and it does not touch the design
+      you are happy with.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; Two Phone Numbers</div>
+    <div class="code">
+  <span class="ok">(435) 334-6359</span>
+  <span class="ok">(435) 890-3355</span>
+
+  Both published on the site. Neither is call-tracked.
+    </div>
+    <div class="warn">
+      <div class="lab">Worth a decision, not necessarily a change</div>
+      <p><b>Two numbers is fine if there is a reason for it</b> &mdash; one for the office and one for you, say. It
+      becomes a problem in three places: Google Business Profile wants one primary number, directory listings drift
+      apart over time, and <b>neither number is tracked</b>, so a call that came from an advert is indistinguishable
+      from one that came from a van.</p>
+      <p><b>You run Meta ads and Local Services Ads.</b> In this trade most enquiries are calls. Without call tracking,
+      the channel that produces your phone calls cannot be identified &mdash; which means the Google Ads tag you
+      already have is only counting part of the picture.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; The One From The Winter Plan, Restated</div>
+    <div class="code">
+  Google Analytics 4        <span class="ok">present</span>
+  Google Ads tag            <span class="ok">present</span>
+
+  Meta pixel                <span class="ph">not found</span>
+  Google Tag Manager        <span class="ph">not found</span>  (nowhere for one to hide)
+    </div>
+    <div class="flag">
+      <div class="lab">It belongs in the technical audit as well, because it is a technical fact</div>
+      <p><b>You told Paige you added Meta ads last winter and they helped a little.</b> There is no Meta pixel on this
+      website, and no tag manager that could be concealing one.</p>
+      <p>So that campaign could not be measured, and nobody who visited during it was collected for retargeting.
+      <b>It is a tag. It is not a design change, and it does not touch anything you like about the site.</b></p>
+      <p class="tag">A static read cannot prove absence with certainty. Whoever runs your ads can confirm it in a
+      minute, and it is worth doing before you spend again this winter.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Scorecard</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Meta pixel</div><div class="sc">None found, while running Meta ads</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Structured data</div><div class="sc">No LocalBusiness, Service or rating markup</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Call tracking</div><div class="sc">None, and two numbers in circulation</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Services page</div><div class="sc">330 words covering all three services</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Town coverage</div><div class="sc">One service-area page, air duct only</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Service pages</div><div class="sc">All three published, 600&ndash;830 words each</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">On-page basics</div><div class="sc">Titles, meta descriptions, tappable numbers</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Google measurement</div><div class="sc">GA4 and a Google Ads conversion tag both live</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Content library</div><div class="sc">59 articles, against zero from any local rival</div></div><div class="badge gA">A</div></div>
+    </div>
+    <div class="tag" style="margin-top:12px">Nothing on this list requires redesigning the site. The four amber and red rows are a pixel, some markup, a phone decision and one thin page.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">If You Only Did Four Things</div>
+    <ul class="road">
+      <li><b>Put the Meta pixel on</b> &mdash; before you spend anything on Meta this winter.</li>
+      <li><b>Add LocalBusiness and Service markup</b>, and rating markup once you are collecting reviews. Hours, not days.</li>
+      <li><b>Decide which number is the business number</b>, and put call tracking on it so phone enquiries can be attributed.</li>
+      <li><b>Take the services page from 330 words to something that actually sells three services</b> &mdash; and while you are in there, that is where a commercial section would go.</li>
+    </ul>
+    <p class="tag" style="margin-top:12px">The commercial page, the town pages and the winter calendar are all in the
+    Winter Plan. This document is only the technical read.</p>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>You were right that the site is not the problem.</h2>
+    <p>It needs a tag, some markup and one page rewritten &mdash; not a rebuild.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 24 September 2026<br><br>
+    For Ben Hansen, Easy Breezy Pros LLC, Cedar City, Utah. <b>Every figure &mdash; the per-page word counts, the 16
+    published pages and 59 articles, the Google Analytics 4 property G-LNMF7NBGBL, the Google Ads conversion tag
+    AW-730405747, the Organization and WebSite structured data and the absence of LocalBusiness, Service, FAQPage and
+    AggregateRating markup, the two published telephone numbers, the tappable telephone links per page, and the meta
+    descriptions on the home, services and contact pages &mdash; was read directly from easybreezypros.com's own served
+    pages on 24 September 2026 and is reproducible.</b> <b>Word counts were taken after removing script, style and
+    comment blocks. We record openly that our first measurement did not remove those blocks and returned figures of
+    15,000 to 19,000 words per page; those were an artefact of the site's inline stylesheets, not content, and the
+    corrected figures are the ones shown.</b> <b>Items recorded as "not found" describe what a static read of the
+    served HTML returned on that date and must not be read as proof of absence; content or tags loaded after render may
+    not appear, and the Meta pixel finding in particular should be confirmed with whoever manages your advertising
+    before being relied on.</b> <b>We make no claim about enquiry forms on any page: form markup is present sitewide
+    and a static read cannot reliably distinguish an enquiry form from a search box, so we have not counted them.</b>
+    <b>Statements about what Google Business Profile prefers, what structured data does, and how call attribution works
+    are general observations about those systems; they are set by Google and change without notice, and nothing here is
+    technical, legal or compliance advice.</b> <b>Your reported use of Local Services Ads and Meta ads, and the
+    statement that Meta helped a little last winter, are as reported to AG1 and have not been verified. The Meta Ad
+    Library refused every request we made, so nothing here describes or assesses any advertisement you have run.</b>
+    <b>No Google Business Profile, review count, map position, search ranking, keyword or traffic figure has been
+    measured.</b> <b>⚠ No enquiry, call, booked job, ranking or revenue outcome is promised, forecast or guaranteed
+    anywhere in this document.</b> Nothing here is a comment on the competence, licensing, insurance or workmanship of
+    this or any other business. Company and platform names are used for identification only and belong to their
+    respective owners. The grades are AG1's own editorial assessment.
+  </div>
+</footer>
+</body></html>
