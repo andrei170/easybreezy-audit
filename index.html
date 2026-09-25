@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Winter Consistency Plan &middot; Easy Breezy Pros &middot; AG1 Consulting</title><style>
+<title>Winter Plan &middot; Easy Breezy Pros &middot; AG1 Consulting</title><style>
 :root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
   --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -89,15 +89,17 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
 @media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
 
-.agnav{position:sticky;top:0;z-index:60;background:rgba(13,17,23,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
-.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
-.agnav .inner::-webkit-scrollbar{display:none}
-.agnav a{flex:0 0 auto;padding:13px 12px;font-size:13.5px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
-.agnav a:hover{color:var(--ink)}
-.agnav a.on{color:var(--accent);border-bottom-color:var(--accent)}
-.agnav a.ext{opacity:.8}
-@media(max-width:640px){.agnav .inner{padding:0 14px}.agnav a{padding:12px 10px;font-size:13px}}
-</style></head><body><nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Winter Plan</a><a href="audit.html">Website Audit</a><a href="competitors.html">Competitors</a></div></nav>
+/* ---------- injected asset nav ---------- */
+.agnav{position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Winter Plan</a><a href="audit.html">Website Audit</a><a href="competitors.html">Competitors</a></div></nav>
 <header>
   <div class="wrap">
     <div class="eyebrow">Winter Consistency Plan &middot; Easy Breezy Pros LLC &middot; Cedar City, Utah</div>
@@ -197,7 +199,41 @@ What is installed on your site today:
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 3 &mdash; Your Blog Goes Silent Every Winter, And You Already Wrote The Winter Posts</div>
+    <div class="h">Finding 3 &mdash; Your Best Service Page Is The One Your Homepage Barely Mentions</div>
+    <div class="code">
+  Words on each of your three service pages:
+
+    Dryer vent cleaning     <span class="ok">829</span>   <span class="ok">&lt;-- your longest and best</span>
+    Air duct cleaning       633
+    Carpet cleaning         630
+
+  Times each service is named on your homepage:
+
+    Carpet                  <span class="ok">65</span>
+    Air duct                22
+    Dryer vent              <span class="ph">5</span>
+    </div>
+    <div class="flag">
+      <div class="lab">You have already done the hard part and then hidden it</div>
+      <p><b>Your dryer vent page is the longest and most thorough page on your site.</b> You clearly know the subject
+      and you have written it properly. <b>And your homepage mentions carpet thirteen times more often than it
+      mentions dryer vents.</b></p>
+      <p><b>That is the wrong way round for the season you are trying to fill.</b> Carpet cleaning has no January
+      trigger. Dryer vents do &mdash; it is the month people run the dryer hardest and the month the fire risk peaks.
+      <b>The service with the seasonal reason to buy is the one your site whispers about.</b></p>
+      <p><b>This costs nothing to fix and it is not a rebuild.</b> Moving dryer vent cleaning up the homepage for the
+      winter months, and pointing the winter content and any paid spend at the page you already wrote, is a
+      reordering rather than a project.</p>
+      <p class="tag">Counts taken from the served homepage and the three service pages on 25 September 2026. Mentions
+      include navigation and footer text, so they measure prominence on the page rather than editorial emphasis
+      alone.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; Your Blog Goes Silent Every Winter, And You Already Wrote The Winter Posts</div>
     <div class="code">
 Fifty-nine posts published. When they were last touched:
 
@@ -234,7 +270,7 @@ Between December and March: <span class="ph">none</span>.
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 4 &mdash; The Real Answer To &ldquo;Consistent&rdquo; Is Not Ads. It Is Contracts.</div>
+    <div class="h">Finding 5 &mdash; The Real Answer To &ldquo;Consistent&rdquo; Is Not Ads. It Is Contracts.</div>
     <div class="win">
       <div class="lab">Your own website already claims this, and then does nothing with it</div>
       <p>Your service-areas page says you are <b>&ldquo;trusted by property managers and home builders.&rdquo;</b> Your
@@ -268,7 +304,7 @@ Pages for commercial or property managers: <span class="ph">0</span>
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 5 &mdash; St George Is The Bigger Market And Has One Page</div>
+    <div class="h">Finding 6 &mdash; St George Is The Bigger Market And Has One Page</div>
     <div class="code">
   Towns named on your service-areas page:
     <span class="ok">Cedar City</span> &middot; <span class="ok">St George</span> &middot; <span class="ok">Hurricane</span> &middot; <span class="ok">Washington</span>
