@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing &middot; Easy Breezy Pros &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+.agnav{position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Winter Plan</a><a href="pricing.html" class="on">Pricing</a><a href="audit.html">Website Audit</a><a href="competitors.html">Competitors</a></div></nav>
+<style>
+.pwrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
+@media(max-width:1000px){.pwrap{grid-template-columns:1fr}}
+.pcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 20px;position:relative;display:flex;flex-direction:column}
+.pcard.feat{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 12px 38px rgba(47,129,247,.14)}
+.pribbon{position:absolute;top:-11px;left:24px;background:var(--accent);color:#fff;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:99px}
+.pkind{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:10px}
+.pname{font-size:20px;font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:14px}
+.pprice{display:flex;align-items:baseline;gap:8px;margin-bottom:4px}
+.pnum{font-size:38px;font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1}
+.pper{font-size:15px;color:var(--mut);font-weight:600}
+.pbuild{font-size:13px;color:var(--mut);margin-bottom:14px}
+.psub{font-size:13.5px;color:var(--mut);margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.plist{list-style:none;padding:0;margin:0 0 18px 0;flex:1}
+.plist li{position:relative;padding:0 0 9px 24px;font-size:13.6px;line-height:1.55;color:var(--ink)}
+.plist li:before{content:"";position:absolute;left:0;top:7px;width:14px;height:14px;border-radius:50%;background:rgba(63,185,80,.14);border:1px solid rgba(63,185,80,.5)}
+.plist li:after{content:"";position:absolute;left:4.5px;top:10.5px;width:4px;height:7px;border-right:2px solid var(--good);border-bottom:2px solid var(--good);transform:rotate(42deg)}
+.pfoot{font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding-top:14px;font-style:italic}
+.ptot{background:linear-gradient(180deg,rgba(47,129,247,.09),rgba(47,129,247,.03));border:1px solid rgba(47,129,247,.35);border-radius:14px;padding:22px 24px;margin-top:6px}
+.ptotrow{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;font-size:15px;border-bottom:1px dashed var(--line)}
+.ptotrow:last-of-type{border-bottom:0}
+.ptotrow b{font-size:17px}
+.ptotbig{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:15px;border-top:2px solid var(--accent)}
+.ptotbig span{font-size:14px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.ptotbig b{font-size:28px;color:var(--ink);font-weight:800}
+.saveflag{display:inline-block;background:rgba(63,185,80,.13);border:1px solid rgba(63,185,80,.45);color:var(--good);font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:99px;margin-top:12px}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Pricing &middot; Easy Breezy Pros &middot; Cedar City, Utah</div>
+    <div class="sub">Prepared for Ben Hansen &middot; 26 September 2026 &middot; AG1 Consulting</div>
+    <h1>Two Ways To Pay. One Of Them Is Built For January.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-A">
+        <div class="bigletter bl-A" style="font-size:38px">1</div>
+        <div class="score100">extra job a month covers the whole thing</div>
+      </div>
+      <div class="heroread">
+        <h2>You told us last January you had one appointment. Everything below is designed so that a month like that costs you less, not more.</h2>
+        <p>On your own figures &mdash; a <b>$725</b> base job at roughly <b>60% net</b> &mdash; one extra job is about
+        <b>$435</b> in your pocket.</p>
+        <p><b>Both options below cost less than that.</b></p>
+        <div class="tag">Figures are yours, from our call of 25 September 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Setup</div>
+    <div class="code">
+  One-off, to fix what is broken          <span class="ok">$500</span>
+
+  Included at no extra cost:
+    <span class="ok">Meta pixel installed properly</span>        so your ads can finally be tracked
+    <span class="ok">New Facebook page and ad account</span>      to get you out of the restricted one
+    <span class="ok">Google licensing issue resolved</span>       the Utah documentation submitted properly
+    <span class="ok">Town and location pages built</span>         you currently have one service area page
+    <span class="ok">Dryer vent moved up the site</span>          your best page, barely mentioned on the homepage
+    <span class="ok">Seasonal landing pages</span>                fall, holiday, winter &mdash; you have none
+    <span class="ok">Call tracking installed</span>
+    <span class="ok">LocalBusiness and service markup</span>
+    </div>
+    <div class="win">
+      <div class="lab">On the Facebook and Google problems specifically</div>
+      <p><b>These are not extras and we are not charging for them.</b> Your Meta account is restricted so you cannot
+      run targeted ads, and Google is holding you up over licensing you have already proven. <b>Both of those are
+      costing you money every week they stay broken</b>, and they are the first thing we would fix.</p>
+      <p><b>We would not ask you to pay separately for undoing a mess somebody else made.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Then Pick One</div>
+
+    <div class="pwrap" style="grid-template-columns:repeat(2,1fr)">
+
+      <div class="pcard">
+        <div class="pkind">Option A &middot; Simple</div>
+        <div class="pname">Flat monthly</div>
+        <div class="pprice"><span class="pnum">$500</span><span class="pper">/ mo</span></div>
+        <div class="pbuild">plus the <b>$500</b> setup</div>
+        <div class="psub">One number. Same every month, busy or quiet.</div>
+        <ul class="plist">
+          <li>Everything in the setup list, then kept working</li>
+          <li>Monthly written report</li>
+          <li>Pages added as we go</li>
+          <li><b>No contract length</b> &mdash; rolling, cancel any month</li>
+        </ul>
+        <div class="pfoot">Easiest to budget. Costs the same in January as in July.</div>
+      </div>
+
+      <div class="pcard feat">
+        <div class="pribbon">Built for your season</div>
+        <div class="pkind">Option B &middot; Shared risk</div>
+        <div class="pname">Small base, plus per job</div>
+        <div class="pprice"><span class="pnum">$150</span><span class="pper">/ mo + $35 a job</span></div>
+        <div class="pbuild">plus the <b>$500</b> setup</div>
+        <div class="psub">You pay us properly when the work comes in, and barely anything when it does not.</div>
+        <ul class="plist">
+          <li>Everything in Option A, identical</li>
+          <li><b>$35 per completed job we can trace to our work</b></li>
+          <li><b>Referrals, repeat customers and word of mouth never count</b></li>
+          <li>Charged after the job is done and paid, not before</li>
+          <li><b>No contract length</b> &mdash; rolling, cancel any month</li>
+        </ul>
+        <div class="pfoot">You said you would rather pay as jobs land than a lump at month end. This is that.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What Each One Costs You In A Real Month</div>
+    <div class="code">
+  Jobs in the month        Option A          Option B
+
+  <span class="ph">1  (last January)</span>       $500              <span class="ok">$185</span>
+  5                        $500              <span class="ok">$325</span>
+  10                       $500              $500        <span class="ph">&lt;-- they meet here</span>
+  12 <span class="ok">(your winter target)</span>  <span class="ok">$500</span>              $570
+  15 <span class="ok">(a good month)</span>        <span class="ok">$500</span>              $675
+    </div>
+    <div class="flag">
+      <div class="lab">The honest version, including where B costs you more</div>
+      <p><b>Below ten jobs a month, Option B is cheaper. Above ten, Option A is.</b> They cross at exactly ten.</p>
+      <p><b>Your consultant told you twelve appointments a month through winter is the number.</b> If you hit that,
+      Option A is the cheaper of the two and we will say so rather than let you drift onto the one that pays us
+      more.</p>
+      <p><b>So why would you take B?</b> Because last January you had one appointment, and on Option B that month
+      costs you $185 instead of $500. <b>Option B is insurance against the month that nearly put you in Walmart.</b>
+      Option A is cheaper if the plan works.</p>
+      <p><b>You can switch between them once, at any point, with a month's notice.</b> Start on B through the winter,
+      move to A in spring if the volume holds. That is not a trick, it is just what makes sense for a business with
+      your seasonality.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Ads Management, Separately And Later</div>
+    <div class="warn">
+      <div class="lab">Not today, and here is why</div>
+      <p><b>You are spending around $1,000 a month across Google and Meta, and you are about to add $250 for
+      winter.</b> We are not going to ask you to pay us to manage that until the tracking exists, because right now
+      <b>nobody can tell you what that spend is producing.</b></p>
+      <p><b>Once the pixel is in and the tracking is live</b>, ad management runs on a sliding scale against spend.
+      At your current budget it would start well below our usual, and we would rather have that conversation when
+      you have the numbers in front of you.</p>
+      <p><b>What we said on the call stands: we want to see you make more money before we ask for more.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">On Your Existing Agreement</div>
+    <div class="flag">
+      <div class="lab">We are not going to advise you on this, and you should be wary of anyone who does</div>
+      <p><b>We are not lawyers and we will not tell you how to exit a contract you signed.</b> That is a question for
+      whoever drafted it, or for an attorney. <b>Anything we said on the call about what he could or could not do
+      should be treated as conversation, not advice.</b></p>
+      <p><b>What is worth doing is simply finding the document.</b> You told us you signed on <b>4 October</b>. If it
+      is a twelve-month term, <b>it expires in about a week</b> and none of this is a problem. That is the first
+      thing to check, and it may make the whole question disappear.</p>
+      <p><b>If it runs longer, the practical answer is to start with what it does not cover</b> rather than to break
+      anything. We serve notice properly, we wait, and we work on whatever sits outside it in the meantime.</p>
+      <p><b>On the website hosting.</b> You want to stay on good terms so he keeps hosting it, and that is fair. But
+      a website you do not control is a website somebody else can switch off. <b>Whenever you are ready, we will move
+      it onto a domain and host you own, at no charge</b> &mdash; not to force the issue, just so the choice is
+      yours rather than his.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Would Do First</div>
+    <ul class="road">
+      <li><b>The Meta pixel and a clean ad account.</b> You are running paid social with no tracking on a restricted
+      account. Everything else is guesswork until this is fixed.</li>
+      <li><b>The Google licensing issue.</b> You have already sent the Utah documentation. It needs submitting
+      properly, not sitting in someone's inbox.</li>
+      <li><b>Dryer vent up the homepage, before November.</b> It is the longest and best page on your site and your
+      homepage mentions it five times. It is also the service with a January reason to buy.</li>
+      <li><b>Seasonal pages built now, live for the run-up.</b> Your competitor has fall, holiday and winter pages.
+      You have none, and the season starts in about five weeks.</li>
+      <li><b>Town pages, St George first.</b> You have one service area page. St George is where you want the second
+      location, and you can reach it two to three days a week if the jobs are scheduled together.</li>
+      <li><b>Then the angles you gave us</b> &mdash; before the family arrives for Thanksgiving, and the disinfectant
+      that kills flu. Those are yours, they are good, and nobody is running them.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>One extra job a month pays for all of it.</h2>
+    <p>You are already paying somebody over $300 a month for an account that is restricted and a Google problem that has not moved.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 26 September 2026, for Ben Hansen, Easy Breezy Pros LLC, Cedar City, Utah.
+    <b>Your figures &mdash; the $725 base price, approximately 60% net margin, 10 to 15 jobs a month, capacity for around four more, roughly
+    $1,000 a month of current ad spend plus $250 planned for winter, the $300-plus monthly fee to your current provider, the single appointment
+    in January, the twelve-appointment winter target, and the $175 and $75 dryer vent pricing &mdash; are as you described them to AG1 on our
+    call of 25 September 2026. They are your figures, not ours, and have not been independently verified.</b>
+    <b>The worked examples showing what each option costs at different job volumes are simple arithmetic on the rates above. They are
+    illustrations of how the pricing behaves, not forecasts, and no job volume is predicted or promised.</b>
+    <b>Website findings &mdash; the absent Meta pixel, the single service area page, the absent seasonal pages, the absent LocalBusiness and
+    service markup, the absent call tracking, and the homepage prominence of each service &mdash; were read directly from easybreezypros.com on
+    25 September 2026 and are reproducible. Items recorded as absent describe what a static read of the served pages returned on that date and
+    are not proof of absence.</b>
+    <b>⚠ The restricted Meta ad account, the Google licensing hold, the terms and start date of your existing agreement, and the conduct of your
+    current provider are entirely as you described them. AG1 has not seen your ad accounts, your Google account or your contract, and makes no
+    claim about any of them.</b>
+    <b>⚠ NOTHING IN THIS DOCUMENT IS LEGAL ADVICE. AG1 is not qualified to advise on your existing agreement and does not do so here. Any remark
+    made during our call about the enforceability of that agreement, the likelihood of action being taken, or the cost of such action was
+    conversation and should not be relied upon. Before ending, varying or working around any agreement you have signed, take advice from a
+    qualified attorney. AG1 does not encourage you to breach any contract.</b>
+    <b>⚠ No enquiry, appointment, job, ranking or revenue outcome is promised, forecast or guaranteed anywhere in this document.</b>
+    Company names are used for identification only and belong to their respective owners.
+  </div>
+</footer>
+</body></html>
