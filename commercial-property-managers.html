@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Easy Breezy Pros - Commercial and Property Manager Page Concept by AG1</title>
+<style>
+  :root{
+    --bg:#0f171b; --panel:#162228; --panel2:#1c2b32; --ink:#eef2f1; --mut:#9fb0b3;
+    --line:#27383f; --amber:#f2a33a; --amber2:#c98320; --teal:#1f4f58; --good:#79c9a6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  a{color:inherit}
+
+  .ribbon{background:var(--amber);color:#1d1204;text-align:center;font-size:12.5px;font-weight:700;
+    padding:7px 12px;letter-spacing:.08em;text-transform:uppercase;font-family:Arial,sans-serif}
+
+  nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line)}
+  .logo{font-size:19px;font-weight:700;letter-spacing:.02em}
+  .logo span{color:var(--amber)}
+  .navlinks{display:flex;gap:22px;font-family:Arial,sans-serif;font-size:14px;color:var(--mut)}
+  .navlinks a{text-decoration:none}
+  @media(max-width:760px){.navlinks{display:none}}
+  .navcta{background:var(--amber);color:#1d1204;text-decoration:none;font-weight:800;font-size:14px;
+    padding:11px 20px;border-radius:6px;font-family:Arial,sans-serif;letter-spacing:.03em}
+
+  .hero{position:relative;min-height:78vh;display:flex;align-items:center;
+    background:linear-gradient(rgba(10,18,21,.68),rgba(10,18,21,.84)),
+    url('https://easybreezypros.com/wp-content/uploads/2023/01/Family_air-duct-cleaning_Carpet-cleaning_Northern-Utah-1280x853.jpg') center/cover}
+  .hero .wrap{padding-top:70px;padding-bottom:70px}
+  .heroin{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+  @media(max-width:860px){.heroin{grid-template-columns:1fr}}
+  .kick{color:var(--amber);font-size:13px;letter-spacing:.28em;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:700}
+  h1{font-size:clamp(32px,4.6vw,50px);line-height:1.14;font-weight:700;margin:16px 0 18px;max-width:16ch}
+  .hero p{font-size:17px;color:#d8e0df;max-width:54ch;margin-bottom:22px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-family:Arial,sans-serif;font-weight:800;font-size:15px;
+    padding:15px 27px;border-radius:6px;letter-spacing:.02em}
+  .btn.amber{background:var(--amber);color:#1d1204}
+  .btn.ghost{border:1.5px solid #ffffff55;color:#fff}
+  .hero .micro{margin-top:18px;font-size:13.5px;color:#c3cfce;font-family:Arial,sans-serif}
+  .hero .micro b{color:var(--amber)}
+  .herocard{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:26px;
+    box-shadow:0 30px 60px rgba(0,0,0,.4)}
+  .herocard h3{font-size:19px;margin-bottom:4px;font-family:Georgia,serif}
+  .herocard .sub{font-family:Arial,sans-serif;font-size:13px;color:var(--mut);margin-bottom:16px}
+  .herocard label{display:block;font-family:Arial,sans-serif;font-size:11.5px;color:var(--mut);
+    text-transform:uppercase;letter-spacing:.1em;margin:11px 0 5px}
+  .herocard select,.herocard input{width:100%;background:#0c1417;border:1px solid var(--line);border-radius:8px;
+    color:var(--ink);padding:11px 13px;font-size:14px;font-family:Arial,sans-serif}
+  .herocard .btn{width:100%;text-align:center;margin-top:16px;border:none;cursor:pointer;font-size:15px}
+  .herocard .note{font-family:Arial,sans-serif;font-size:11.5px;color:var(--good);margin-top:10px;text-align:center}
+
+  .trust{border-bottom:1px solid var(--line);background:var(--panel)}
+  .trust .wrap{display:flex;justify-content:space-between;gap:18px;padding:20px 24px;flex-wrap:wrap}
+  .titem{font-family:Arial,sans-serif;font-size:13.5px;color:var(--mut)}
+  .titem b{color:var(--ink);display:block;font-size:16px;margin-bottom:2px}
+
+  section{padding:72px 0}
+  .eyebrow{color:var(--amber);font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:700}
+  h2{font-size:clamp(25px,3.2vw,36px);font-weight:700;margin:12px 0 14px}
+  .lede{color:var(--mut);font-size:16px;max-width:62ch}
+
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
+  @media(max-width:760px){.why{grid-template-columns:1fr}}
+  .quote{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:10px;padding:22px 24px}
+  .quote p{font-size:17px;line-height:1.5}
+  .quote .src{font-family:Arial,sans-serif;font-size:12.5px;color:var(--mut);margin-top:10px}
+  .srcline{font-family:Arial,sans-serif;font-size:12.5px;color:var(--mut);margin-top:16px;max-width:80ch}
+
+  .svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+  @media(max-width:960px){.svc{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.svc{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+    transition:transform .25s ease, border-color .25s ease}
+  .card:hover{transform:translateY(-4px);border-color:var(--amber2)}
+  .card .ph{height:170px;background-size:cover;background-position:center}
+  .card .bd{padding:18px 20px 22px}
+  .card h3{font-size:18px;margin-bottom:6px}
+  .card p{font-size:14px;color:var(--mut);font-family:Arial,sans-serif}
+  .card .rng{display:inline-block;margin-top:12px;font-family:Arial,sans-serif;font-size:13px;font-weight:700;
+    color:var(--amber);border:1px solid var(--amber2);border-radius:999px;padding:5px 12px}
+
+  .band{background:var(--teal);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding-top:60px;padding-bottom:60px}
+  @media(max-width:860px){.band .wrap{grid-template-columns:1fr}}
+  ul.steps{list-style:none;margin-top:8px}
+  ul.steps li{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid #ffffff14;font-family:Arial,sans-serif}
+  ul.steps li:last-child{border-bottom:none}
+  .n{flex:0 0 38px;height:38px;border-radius:99px;background:var(--amber);color:#1d1204;display:flex;
+    align-items:center;justify-content:center;font-weight:900;font-size:16px}
+  ul.steps b{display:block;font-size:15px;margin-bottom:3px}
+  ul.steps p{font-size:13.5px;color:#cfdcdc}
+
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px}
+  @media(max-width:760px){.gal{grid-template-columns:1fr 1fr}}
+  .gal div{height:200px;border-radius:10px;background-size:cover;background-position:center;
+    transition:transform .25s ease;position:relative}
+  .gal div:hover{transform:scale(1.025)}
+
+  .areas{margin-top:28px;display:flex;flex-wrap:wrap;gap:9px}
+  .areas span{font-family:Arial,sans-serif;font-size:13.5px;color:var(--mut);border:1px solid var(--line);
+    border-radius:999px;padding:7px 14px}
+
+  .cta-final{text-align:center;padding:80px 0;position:relative;
+    background:linear-gradient(rgba(10,18,21,.74),rgba(10,18,21,.9)),
+    url('https://easybreezypros.com/wp-content/uploads/2023/02/Home-Background-Home-Page-Air-Duct-and-Carpet-Cleaning-2400x910-1-e1743798460230.jpg') center/cover}
+  .cta-final h2{font-size:clamp(27px,3.8vw,42px)}
+  .cta-final p{color:#cfd8d7;margin:12px auto 26px;max-width:52ch}
+
+  footer{padding:32px 0 90px;border-top:1px solid var(--line);color:var(--mut);font-family:Arial,sans-serif;font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  footer .fine{width:100%;font-size:12px;line-height:1.5;margin-top:6px}
+
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#0c1417;border-top:1px solid var(--amber2);
+    display:flex;gap:10px;justify-content:center;padding:10px 14px}
+  .callbar a{flex:1;max-width:260px;text-align:center;text-decoration:none;font-family:Arial,sans-serif;
+    font-weight:800;font-size:14.5px;padding:13px 10px;border-radius:8px}
+  .callbar .c1{background:var(--amber);color:#1d1204}
+  .callbar .c2{border:1.5px solid var(--amber2);color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Seasonal landing page concept by AG1 Consulting · Not the live website</div>
+
+<div class="wrap">
+  <nav>
+    <div class="logo">Easy Breezy <span>Pros</span></div>
+    <div class="navlinks"><a href="#why">Why now</a><a href="#services">Services</a><a href="#how">How it works</a><a href="#areas">Areas</a></div>
+    <a class="navcta" href="#quote">Talk to Us</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <div class="wrap heroin">
+    <div>
+      <div class="kick">Commercial cleaning · Cedar City &amp; Southern Utah</div>
+      <h1>Duct and carpet cleaning for businesses and property managers.</h1>
+      <p>Offices, warehouses, rentals and public buildings. One local team for air ducts, dryer vents and carpets. Tell us about the property and we will call you to talk through it.</p>
+      <div class="cta-row">
+        <a class="btn ghost" href="tel:4358903355">Call (435) 890-3355</a>
+      </div>
+      <div class="micro"><b>Commercial and residential</b> · Air duct, dryer vent and carpet cleaning in Southern Utah.</div>
+    </div>
+    <div class="herocard" id="quote">
+      <h3>Talk to Us About Your Property</h3>
+      <div class="sub">Tell us what you manage. We call you back to talk it through.</div>
+      <label>Property type</label>
+      <select><option>Office or retail</option><option>Warehouse</option><option>Rental property</option><option>School or public building</option><option>Other</option></select>
+      <label>Name</label>
+      <input type="text" placeholder="Your name">
+      <label>Phone</label>
+      <input type="tel" placeholder="(435) 000-0000">
+      <label>Town</label>
+      <input type="text" placeholder="e.g. Cedar City">
+      <button class="btn amber" type="button">Request a Call</button>
+      <div class="note">We call to confirm · No obligation</div>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="titem"><b>HomeAdvisor Top Rated Elite</b>Badge shown on easybreezypros.com</div>
+    <div class="titem"><b>IICRC certified</b>Badge shown on easybreezypros.com</div>
+    <div class="titem"><b>Cedar City, Utah</b>Serving Southern Utah</div>
+    <div class="titem"><b>Three services</b>Air duct, dryer vent, carpet</div>
+  </div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <div class="eyebrow">Who this is for</div>
+    <h2>Properties with more than one room to look after.</h2>
+    <p class="lede">If you look after a building for other people, you want one contact, a clear booking and no chasing. These are the kinds of properties we are set up for.</p>
+    <div class="why">
+      <div class="quote"><p>Offices, retail units and warehouses with air ducts and carpets that need regular cleaning.</p></div>
+      <div class="quote"><p>Rental properties between tenants, and property managers who need several units done.</p></div>
+      <div class="quote"><p>Schools and public buildings, where the work has to fit around the opening hours.</p></div>
+      <div class="quote"><p>Homebuilders and contractors handing over a finished building.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2>One team for the whole building.</h2>
+    <p class="lede">Air duct cleaning, dryer vent cleaning and carpet cleaning, for businesses, rentals and public buildings.</p>
+    <div class="svc">
+      <div class="card"><div class="ph" style="background-image:url('https://easybreezypros.com/wp-content/uploads/2023/02/dryer-vent-cleaning-900x900-1.png')"></div><div class="bd"><h3>Commercial Air Ducts</h3><p>Duct cleaning for offices, retail, warehouses and public buildings.</p><span class="rng">Ask about it</span></div></div>
+      <div class="card"><div class="ph" style="background-image:url('https://easybreezypros.com/wp-content/uploads/2023/02/air-duct-cleaning.png')"></div><div class="bd"><h3>Dryer Vent Cleaning</h3><p>For laundry rooms, rentals and multi-unit buildings.</p><span class="rng">Ask about it</span></div></div>
+      <div class="card"><div class="ph" style="background-image:url('https://easybreezypros.com/wp-content/uploads/2023/02/carpet-cleaning-900x900-1.jpg')"></div><div class="bd"><h3>Commercial Carpet Cleaning</h3><p>Carpets cleaned to suit your opening hours or between tenants.</p><span class="rng">Ask about it</span></div></div>
+      <div class="card"><div class="ph" style="background-image:url('https://easybreezypros.com/wp-content/uploads/2025/11/carpet-cleaning-rental-property-cedar-city-utah.jpg')"></div><div class="bd"><h3>Rentals and Multi-Unit</h3><p>Several units, one booking, one contact.</p><span class="rng">Ask about it</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="band" id="how">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">How it works</div>
+      <h2>From a call to a booked job.</h2>
+      <p class="lede" style="color:#cfdcdc">Simple, and no obligation to book.</p>
+    </div>
+    <ul class="steps">
+      <li><span class="n">1</span><span><b>Tell us about the property</b><p>Fill in the form or call. It takes under a minute.</p></span></li>
+      <li><span class="n">2</span><span><b>We talk it through</b><p>We call you back, agree the scope and fit the work around your hours.</p></span></li>
+      <li><span class="n">3</span><span><b>We do the work</b><p>Ducts, vents and carpets can go in the same booking.</p></span></li>
+    </ul>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Our work</div>
+    <h2>Local jobs, local team.</h2>
+    <div class="gal">
+      <div style="background-image:url('https://easybreezypros.com/wp-content/uploads/2023/02/dryer-vent-cleaning-900x900-1.png')"></div>
+      <div style="background-image:url('https://easybreezypros.com/wp-content/uploads/2023/02/air-duct-cleaning.png')"></div>
+      <div style="background-image:url('https://easybreezypros.com/wp-content/uploads/2023/02/carpet-cleaning-900x900-1.jpg')"></div>
+      <div style="background-image:url('https://easybreezypros.com/wp-content/uploads/2023/01/Family_air-duct-cleaning_Carpet-cleaning_Northern-Utah-980x653.jpg')"></div>
+      <div style="background-image:url('https://easybreezypros.com/wp-content/uploads/2025/11/carpet-cleaning-rental-property-cedar-city-utah.jpg')"></div>
+      <div style="background-image:url('https://easybreezypros.com/wp-content/uploads/2026/08/dust-storm.jpg')"></div>
+    </div>
+    <div class="areas" id="areas">
+      <span>Cedar City</span><span>St George</span><span>Washington</span><span>Hurricane</span><span>Enterprise</span><span>and surrounding Southern Utah towns</span>
+    </div>
+  </div>
+</section>
+
+<div class="cta-final">
+  <div class="wrap">
+    <div class="eyebrow">Commercial and property managers</div>
+    <h2>Talk to us about your property.</h2>
+    <p>Call or request a call. We will talk it through and agree a time.</p>
+    <a class="btn amber" href="tel:4358903355">Call (435) 890-3355</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>Easy Breezy Pros · Cedar City, Utah</div>
+    <div>Seasonal landing page concept by AG1 Consulting · Not the live website</div>
+    <div class="fine">Draft for review. The photos are taken from the current easybreezypros.com site. The phone number, the process steps and the town list are placeholders to be confirmed with the business. No fire statistics or customer claims are used on this page.</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="c1" href="tel:4358903355">Call Now</a>
+  <a class="c2" href="#quote">Request a Call</a>
+</div>
+
+</body>
+</html>
